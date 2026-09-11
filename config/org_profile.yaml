@@ -1,0 +1,40 @@
+# org_profile.yaml — Tech On Hand organisational profile (module 01)
+#
+# This file is the single source of truth for every org-specific fact the
+# platform's prefilter (module 07) and scoring engine (module 09) use.
+# Never hardcode any of these values elsewhere in the codebase.
+#
+# STATUS: placeholder values only — see docs/modules/01-org-profile.md §13
+# (Open Questions). Must be confirmed by the grants team before Phase 1
+# scoring calibration can run meaningfully.
+
+legal_entities:
+  - name: Tech On Hand Inc.
+    jurisdiction: US
+    status: 501(c)(3) public charity
+    registered_since: null # TODO: confirm year
+  - name: Tech On Hand Kenya
+    jurisdiction: KE
+    status: null # TODO: confirm — NGO / CBO / company limited by guarantee
+    registered_since: null # TODO: confirm year
+
+operating_since: null # TODO: earliest entity's registered_since
+audited_financials_available_years: null # TODO
+annual_budget_usd: null # TODO
+operating_countries: [KE]
+target_regions: [East Africa, Sub-Saharan Africa]
+
+pillars:
+  e_waste_refurbishing: { weight: 1.0 }
+  digital_education: { weight: 1.0 }
+  off_grid_solar: { weight: 0.8 }
+  connectivity: { weight: 0.8 }
+  capacity_logistics: { weight: 0.6 }
+
+award_range_usd:
+  ideal_min: 15000
+  ideal_max: 250000
+  hard_max: 2000000
+
+can_provide_matching_funds: false
+certifications: [] # e.g. R2, e-Stewards — TODO: confirm with grants team
